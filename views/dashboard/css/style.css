@@ -1,0 +1,126 @@
+.container {
+
+    background-color: rgba(0, 0, 0, 0.973);
+    color: aliceblue;
+    justify-content: space-around;
+}
+
+.cargar {
+    display: block;
+    justify-content: space-around;
+}
+
+.myForm {
+    margin: 170px 0%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.myForm .banner {
+    margin: 0 70px;
+}
+
+.myForm .banner img {
+    max-width: 500px;
+    max-height: 430px;
+}
+
+.preview-modal {
+    width: 100%;
+    margin: 30%;
+}
+
+.preview-content {
+    width: 100%;
+
+    color: aliceblue;
+}
+
+.image-container {
+    width: 100%;
+    margin: 30px 0%;
+}
+
+.image-container img    {
+    width: 80%;
+    align-items: center;
+}
+
+
+.preview-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#preview-description {
+    width: 100%;
+    display: flex;
+    
+}
+
+pre {
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    width: 50%; /* establece el ancho del elemento en 50% del ancho del contenedor */
+}
+
+
+#map {
+    width: 100%;
+}
+
+.myForm label {
+    display: flex;
+    font-size: 1.2em;
+    border-color: aliceblue;
+}
+
+.info input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 3px 0;
+    box-sizing: border-box;
+}
+
+.options select {
+    margin: 30px 0 0 15%;
+    font-size: 20px;
+}
+
+.info #boton {
+
+    margin: 3px 0px 0 32%;    
+
+}
+
+.info #boton-input {
+    margin: 3px 0px 0 10px;    
+
+    width: 30%;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sidenav {
+  width: 20%;
+  padding: 20px;
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+
+#main-content {
+  width: 80%;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}

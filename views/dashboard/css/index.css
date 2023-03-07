@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(62, 68, 84), rgb(29, 42, 47), rgb(55, 64, 55), rgb(185, 209, 209));
+    background-size: 400% 400%;
+    animation: gradient 12s ease-in infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+
+    }
+}
+
+.navbar {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(84, 88, 90), rgb(77, 103, 112), rgb(56, 69, 56), rgb(56, 72, 72));
+}
+
+.nav li a {
+    color: aliceblue;
+
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.cepislogo {
+    margin: 5px 0;
+}
+
+.cepislogo h1 {
+    text-shadow: 1px 2px 2px black;
+    color: rgb(17, 181, 80);
+    font-size: 1.4vmax;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 320px;
+    max-width: 950px;
+    width: 80%;
+    height: 35%;
+    border-radius: 10px;
+    margin-top: 8%;
+
+    background: linear-gradient(45deg, rgb(91, 107, 93), rgb(35, 72, 48), rgb(143, 219, 143), rgb(11, 131, 127));
+    background-size: 400% 400%;
+    animation: gradient 12s ease-in infinite;
+}
+
+.jumbotron {
+    margin: 20px;
+}
+
+.itu {
+    color: rgb(224, 244, 7);
+    text-shadow: 1px 2px 2px black;
+    font-weight: 600;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4.4vmin;
+}
+
+.cepis {
+    border-radius: 50%;
+}
+
+/*configuracion para las imagenes*/
+
+/*=================Imagenes =================*/
+
+.item img {
+    max-width: 100%;
+    outline: 1px solid rgb(224, 222, 222);
+    cursor: pointer;
+    display: block;
+    margin-bottom: 2rem;
+    outline-offset: 4px;
+    border-radius: 18px;
+}
+
+.item img:hover {
+    transform: scale(1.4);
+    text-align: center;
+
+}
+
+.gallery {
+    columns: 5 210px;
+    column-gap: 2rem;
+    margin: 5%;
+    width: auto;
+    transition: .5s ease;
+}
+
+/*=================SPIN =================*/
+/*otra spin*/
+
+.Loader {
+    top: -2px;
+    transition: all 1.5s;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+    background-color: rgb(240, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-outside {
+    width: 150px;
+    background: linear-gradient(rgba(139, 142, 146, 0.1) 40%, rgb(58, 16, 173) 100%);
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    animation: spin 1s linear infinite;
+}
+
+.circle-inside {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(237, 234, 234);
+}
+
+.Loader span {
+    position: absolute;
+    font-size: 30px;
+    color: rgb(48, 48, 52);
+    animation: fadeIn 1s linear infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    color: aliceblue;
+    position: relative;
+    margin-top: 0%;
+    background: linear-gradient(45deg, rgb(62, 68, 84), rgb(29, 42, 47), rgb(55, 64, 55), rgb(185, 209, 209));
+    padding: 35px;
+
+}
+
+
+.subir a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.subir {
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
+}
+
+.subir a:hover {
+    color: rgb(167, 230, 219);
+    font-weight: 700;
+
+}

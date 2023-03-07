@@ -1,0 +1,6 @@
+Options -Indexes
+RedirectMatch 404 /(backup|temp)/
+<FilesMatch "\.inc|\.cfg|\.conf|\.sql">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
